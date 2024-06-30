@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import Prism from "prismjs";
-// import "prismjs/themes/prism.css"; // or any other Prism theme you prefer
 import 'prismjs/themes/prism-funky.css';
 
 import "prismjs/components/prism-javascript"; // add the language you need

@@ -3,7 +3,7 @@ import Editor from "./codeEditor/CodeEditor";
 
 import "./App.css";
 import Prism from "prismjs";
-import "prismjs/themes/prism.css";
+
 
 const App = () => {
   const [code, setCode] = useState(`function add(a, b) {

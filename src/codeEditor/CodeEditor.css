@@ -23,13 +23,13 @@ h1 {
   height: 400px;
   width: 500px;
   border-radius: 1%;
-  background-color: #090343;
+  background-color: #26243d;
 
 }
 .npm__react-simple-code-editor__textarea {
   outline: none;
   border: 1px solid #b59a9a;
-  border-radius: 20px;
+  border-radius: 1%;
   box-sizing: border-box;
   padding: 10px;
   font-family: "Fira code", "Fira Mono", monospace;
