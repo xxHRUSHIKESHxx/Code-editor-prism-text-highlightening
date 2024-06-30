@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import Prism from "prismjs";
-import 'prismjs/themes/prism-funky.css';
+import "prismjs/themes/prism-funky.css";
 
-import "prismjs/components/prism-javascript"; // add the language you need
+import "prismjs/components/prism-javascript";
 import "./CodeEditor.css";
 
 const Editor = ({
