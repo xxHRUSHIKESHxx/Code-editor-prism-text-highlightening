@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Editor from "./codeEditor/CodeEditor";
 
-function App() {
+import "./App.css";
+import Prism from "prismjs";
+import "prismjs/themes/prism.css";
+
+const App = () => {
+  const [code, setCode] = useState(`function add(a, b) {
+  return a + b;
+}`);
+
+  const highlight = (code) => {
+    return Prism.highlight(code, Prism.languages.javascript, "javascript");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Simple React Code Editor Using Prism.js</h1>
+      <Editor
+        value={code}
+        onValueChange={setCode}
+        highlight={highlight}
+        padding={10}
+        style={{
+          height: "500px",
+        }}
+        placeholder={code}
+      />
     </div>
   );
-}
+};
 
 export default App;
